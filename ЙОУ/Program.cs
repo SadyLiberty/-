@@ -1035,7 +1035,7 @@ namespace FistApp1
                     Console.WriteLine($"Сумма: {sum}");
                 }
                 catch (Exception)
-                { // Общий перехват всех ошибок
+                { 
                     Console.WriteLine("Произошла ошибка при вводе или расчете.");
                 }
             }
@@ -1079,7 +1079,7 @@ namespace FistApp1
                     for (int i = 0; i < size; i++)
                     {
                         int val = int.Parse(Console.ReadLine());
-                        if (val == 0) throw new DivideByZeroException(); // В C# деление на ноль целых чисел вызывает исключение
+                        if (val == 0) throw new DivideByZeroException();
                         results[i] = (double)arr1[i] / val;
                     }
 
